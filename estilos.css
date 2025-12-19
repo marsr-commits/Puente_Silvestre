@@ -1,0 +1,691 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/*colores asignados*/
+:root {
+    --colorVerde: #95ae60;
+    --colorFondo: white;
+    --colorTestimonio: #ededed;
+    --colotTexto: black;
+    --colorFooter: #006633;
+    --colorNoticias: #81aba1;
+}
+
+html {
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+}
+
+/*contenedor*/
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow: hidden;
+    background-color: var(--colorFondo);
+
+}
+
+/* Sticky Footer Implementation */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
+/*estilos dentro del header*/
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    position: relative;
+}
+
+/* Checkbox Hack base styles */
+.menu_toggle {
+    display: none;
+}
+
+.menu_icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--colorVerde);
+}
+
+/*logo*/
+.menu_logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+}
+
+.menu_logo img {
+    display: block;
+    height: 80px;
+}
+
+/*Situado a la derecha menu*/
+.menu_derecha {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    -background: var(--colorVerde);
+}
+
+/*enlaces*/
+.lista_enlaces {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+    margin-right: 10px;
+
+}
+
+.enlace_a {
+    text-decoration: none;
+    color: var(--colorTexto);
+}
+
+/*boton socio*/
+.menu_boton {
+    width: 150px;
+    display: block;
+    padding: 6px 0;
+    margin-top: 5px;
+    background: var(--colorVerde);
+    color: var(--colorFondo);
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 300px;
+    border: none;
+}
+
+.menu_boton:hover {
+    background: var(--colorVerde);
+    color: var(--colorFondo);
+}
+
+.enlace_b {
+    text-decoration: none;
+    color: var(--colorFondo);
+}
+
+/*el hero empieza aqui*/
+.hero {
+    height: 600px;
+    background-image: url(vegetacion-en-entorno-montanoso.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0 -20px;
+}
+
+.hero_contenedor {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--colorFondo);
+    background-attachment: fixed;
+}
+
+/* Estilo Titulo h1 del index.html*/
+.hero_titulo {
+    font-size: 3rem;
+    font-style: bold;
+
+}
+
+/* Estilo Titulo h1 de las demas paginas web*/
+.hero_titulo2 {
+    font-size: 3rem;
+    font-style: bold;
+    color: var(--colotTexto);
+
+}
+
+
+/*Estilo subtitulo h3*/
+.hero_subtitulo {
+    font-size: 1rem;
+
+}
+
+/*Estilo CTA*/
+.hero_CTA {
+    width: 300px;
+    display: block;
+    padding: 12px 0;
+    margin-top: 10px;
+    background: var(--colorVerde);
+    color: var(--colorFondo);
+    text-decoration: none;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: 600px;
+
+}
+
+/* Seccion Noticias*/
+.noticias {
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    margin: 20px;
+    gap: 2rem;
+}
+
+/*Titulo h2*/
+.titulo_noticias {
+    font-size: 2rem;
+    font-style: bold;
+    color: var(--colorTexto);
+    gap: 2rem;
+
+}
+
+/*Contenido noticias*/
+.noticias_contenedor {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+/*Los articulos*/
+.noticias_card {
+    width: 20%;
+    height: 100%;
+    padding: 20px;
+    background-color: var(--colorNoticias);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.noticias_card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+/*Imagenes*/
+.noticias_imagen {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+/*Texto de las noticias*/
+.noticias_titulo {
+    font-size: 1rem;
+    color: var(--colorFondo);
+    margin: 10px 0;
+
+}
+
+.noticias_texto {
+    color: var(--colorFondo);
+    font-size: 0.9rem;
+    line-height: 1.3;
+    overflow: hidden;
+    font-style: italic;
+}
+
+/*Enlace a leer mas*/
+.noticias_leermas {
+    font-size: 0.7rem;
+    height: auto;
+    margin: 5px 0;
+    text-align: right;
+    text-decoration: none;
+    color: var(--colorTexto);
+}
+
+/*AQUI EMPIEZA LA INFORMACION EXTRA*/
+.informacion {
+    width: 100%;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.9px solid #006633;
+    margin-bottom: 15px;
+
+}
+
+/*Contenedor de la informacion extra*/
+.informacion_contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*El texto de la informacion extra*/
+.informacion_titulo {
+    font-size: 1.5rem;
+    font-style: bold;
+    text-align: center;
+}
+
+.informacion_subtitulo {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+}
+
+.informacion_inpacto {
+    font-size: 0.9rem;
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+}
+
+.informacion_texto {
+    font-size: 0.9rem;
+    font-style: normal;
+    text-align: center;
+}
+
+/*AQUI EMPIEZA LOS TESTIMONIOS*/
+.testimonios {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 -20px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colorTestimonio);
+    margin-bottom: 20px;
+}
+
+/*Titulo h2*/
+.testimonio_titulo {
+    font-size: 2rem;
+    font-style: bold;
+    color: var(--colorTexto);
+    display: flex;
+    justify-content: center;
+    -align-items: center;
+    gap: 2rem
+}
+
+/*Texto p*/
+.frase_testimonio {
+    font-size: 1rem;
+    font-style: normal;
+    color: var(--colorTexto);
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/*Contenido de los testimonios*/
+.menu_testimonios {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+
+/*Articulos*/
+.testimonio_card {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*Imagenes Testimonio*/
+.testimonio_imagen {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    display: block;
+
+}
+
+/*Texto Testimonio*/
+.texto_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+
+/*Nombres de los testimonios*/
+.nombre_testimonio {
+    text-align: center;
+    align-items: center;
+    font-size: 1rem;
+    font-style: bold;
+}
+
+/*Texto de los testimonios*/
+.texto_testimonio {
+    font-size: 0.9rem;
+    line-height: 1.3;
+    text-align: center;
+    overflow: hidden;
+    font-style: italic;
+}
+
+/*AQUI EMPIEZA EL FORMULARIO*/
+.formuario {
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    margin: 20px;
+    gap: 2rem;
+
+}
+
+/*Titulo formulario h2*/
+.formulario_titulo {
+    font-size: 2rem;
+    font-style: bold;
+    display: flex;
+    justify-content: center;
+    padding: auto;
+}
+
+/*Formulario texto*/
+.formulario_texto {
+    font-size: 1rem;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/*Contenido del formulario*/
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+/*Secciones del formulario*/
+.formulario_grupo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-style: italic;
+    gap: 2rem;
+    margin-bottom: 20px;
+
+}
+
+input[type="text"] input[type="email"] {
+    padding: 10px;
+    border-radius: 25%;
+    background-color: var(--colorFondo);
+    border: none;
+}
+
+/*Boton enviar del formulario*/
+.formulario_boton {
+    width: 100px;
+    display: block;
+    padding: 12px 0;
+    margin-top: 10px;
+    background: var(--colorVerde);
+    color: var(--colorFondo);
+    text-decoration: none;
+    border-radius: 25px;
+    text-align: center;
+    font-weight: 600px;
+    font-size: 1rem;
+}
+
+
+/*AQUI EMPIEZA EL FOOTER*/
+/*El contairer del footer*/
+.footer {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow: hidden;
+    background-color: var(--colorFooter);
+}
+
+/*Todo lo que va dentro del footer*/
+.footer_container {
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+/*El contenido escrito del footer*/
+.footer_contenido {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Los datos de contacto en el footer*/
+.footer_contactos {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer_titulo {
+    display: flex;
+    align-items: center;
+    color: var(--colorFondo);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+/*Dentro de los contactos la informacion de la ONG en el footer*/
+.footer_info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/*Dentro de los contactos los iconos en el footer*/
+.footer_icono {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--colorFondo);
+}
+
+.footer_icono i {
+    color: var(--colorFondo);
+    width: 20px;
+}
+
+/*Dentro de los contactos el aviso legal en el footer*/
+.footer_avisolegal {
+    font-size: 0.9rem;
+    line-height: 1.3;
+    color: var(--colorFondo);
+}
+
+.aviso_footer {
+    text-decoration: none;
+    color: var(--colorFondo);
+}
+
+/*Redes sociales situados en el footer*/
+.footer_redessociales {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: auto;
+    color: var(--colorFondo);
+    font-size: 1.5rem;
+}
+
+.footer_redessociales a {
+    text-decoration: none;
+    color: var(--colorFondo);
+}
+
+@media screen and (max-width: 767px) {
+
+    /* General Container Adjustments */
+    .container {
+        width: 100%;
+        padding: 0 15px;
+        overflow: visible;
+
+    }
+
+    /* Hamburger Menu Implementation */
+    .menu_icon {
+        display: block;
+        margin-right: 15px;
+    }
+
+    .menu_derecha {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: var(--colorFondo);
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: none;
+        z-index: 1000;
+        gap: 1.5rem;
+    }
+
+    /* Show menu when checked */
+    .menu_toggle:checked~.menu_derecha {
+        display: flex;
+    }
+
+    .lista_enlaces {
+        flex-direction: column;
+        margin-right: 0;
+        gap: 1.5rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: auto;
+        min-height: 500px;
+        background-attachment: scroll;
+    }
+
+    .hero_contenedor {
+        width: 90%;
+        padding: 40px 0;
+    }
+
+    .hero_titulo {
+        font-size: 2rem;
+    }
+
+    .hero_subtitulo {
+        font-size: 0.9rem;
+    }
+
+    /* Noticias Section */
+    .noticias {
+        height: auto;
+        margin: 40px 0;
+    }
+
+    .noticias_contenedor {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .noticias_card {
+        width: 100%;
+    }
+
+    /* Testimonios Section */
+    .testimonios {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .menu_testimonios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonio_card {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    /* Informacion Section */
+    .informacion {
+        height: auto;
+        padding: 20px;
+    }
+
+    /* Footer */
+    .footer_contenido {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .footer_contactos {
+        width: 100%;
+    }
+
+    .footer_info {
+        align-items: center;
+    }
+
+    .footer_redessociales {
+        margin-left: 0;
+        justify-content: center;
+    }
+}
